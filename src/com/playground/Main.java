@@ -1,12 +1,15 @@
 package com.playground;
 
-import com.playground.challenge.BinarySearch;
-import com.playground.challenge.Algorithm;
+import com.playground.array.RemoveDuplicateSortedArray;
+import com.playground.search.BinarySearch;
 
 public class Main {
     public static void main(String[] args) {
         Algorithm challenge;
-        challenge = new BinarySearch();
+
+        // Change instantiation here
+        challenge = new RemoveDuplicateSortedArray();
+
         challenge.execute();
     }
 }

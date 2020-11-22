@@ -1,4 +1,4 @@
-package com.playground.challenge;
+package com.playground;
 
 @FunctionalInterface
 public interface Algorithm {

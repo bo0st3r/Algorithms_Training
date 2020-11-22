@@ -1,5 +1,7 @@
 package com.playground.challenge;
 
+import com.playground.Algorithm;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

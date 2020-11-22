@@ -1,4 +1,6 @@
-package com.playground.challenge;
+package com.playground.search;
+
+import com.playground.Algorithm;
 
 import java.util.ArrayList;
 import java.util.List;
