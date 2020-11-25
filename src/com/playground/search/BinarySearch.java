@@ -45,12 +45,9 @@ public class BinarySearch implements Algorithm {
                 max = mid - 1;
             else if (guess < toFind)
                 min = mid + 1;
+            else
+                return guess;
         }
-
-        System.out.println("toFind: " + toFind + ", guess: " + guess + ", nbRounds: " + nbRounds);
-        if (guess != toFind)
-            return -1;
-
-        return guess;
+        return -1;
     }
 }
