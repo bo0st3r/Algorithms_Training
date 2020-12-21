@@ -1,4 +1,4 @@
-package com.playground.search;
+package com.playground.array.search;
 
 import com.playground.Algorithm;
 
@@ -10,8 +10,8 @@ public class BinarySearch implements Algorithm {
     @Override
     public void execute() {
         List<Integer> items = new ArrayList<>();
-        int size = 500000;
-        final int toFind = 489000;
+        int size = 50000000;
+        final int toFind = 48900000;
 
         for (int i = 0; i < size; i++) {
             items.add(i);
@@ -35,7 +35,7 @@ public class BinarySearch implements Algorithm {
         if (toSearch.get(max) < toFind || toSearch.get(min) > toFind)
             return -1;
 
-        int mid = 0, guess = 0, nbRounds = 0;
+        int mid, guess = 0, nbRounds = 0;
         while (guess != toFind && min >= 0 && max >= 0) {
             nbRounds++;
             mid = Math.floorDiv(min + max, 2);

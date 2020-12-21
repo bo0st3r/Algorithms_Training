@@ -1,14 +1,29 @@
 package com.playground;
 
-import com.playground.linkedlist.DeleteNode;
+import com.playground.tree.search.BSF;
+
+import java.time.Duration;
+import java.time.Instant;
 
 public class Main {
     public static void main(String[] args) {
-        Algorithm challenge;
-
         // Change instantiation here
-        challenge = new DeleteNode();
+        Algorithm challenge = new BSF();
+        // Change instantiation here
 
+        Instant before = Instant.now();
         challenge.execute();
+
+        Instant after = Instant.now();
+        Duration duration = Duration.between(before, after);
+        printBar();
+        System.out.println("Challenge: " + challenge.getClass().getSimpleName());
+        System.out.println("Duration in nanoseconds: " + duration.getNano());
+    }
+
+    public static void printBar(){
+        System.out.println("\n-------------------");
     }
 }
+
+
