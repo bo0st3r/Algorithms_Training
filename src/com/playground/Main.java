@@ -1,6 +1,6 @@
 package com.playground;
 
-import com.playground.tree.search.BSF;
+import com.playground.tree.search.BFS;
 
 import java.time.Duration;
 import java.time.Instant;
@@ -8,7 +8,7 @@ import java.time.Instant;
 public class Main {
     public static void main(String[] args) {
         // Change instantiation here
-        Algorithm challenge = new BSF();
+        Algorithm challenge = new BFS();
         // Change instantiation here
 
         Instant before = Instant.now();

@@ -1,6 +1,6 @@
 package com.playground.tree.model;
 
-public class BinaryTree<T> implements Comparable<T> {
+public class BinaryTree<T> {
     private T value;
     private BinaryTree<T> left;
     private BinaryTree<T> right;
@@ -13,6 +13,11 @@ public class BinaryTree<T> implements Comparable<T> {
         T leftValue = hasLeft() ? left.value : null;
         T rightValue = hasRight() ? right.value : null;
         return String.format("value: %s, left: %s, right: %s", value, leftValue, rightValue);
+    }
+
+    @Override
+    public String toString() {
+        return value.toString();
     }
 
     public boolean hasLeft() {
@@ -49,10 +54,5 @@ public class BinaryTree<T> implements Comparable<T> {
 
     public void setRight(BinaryTree<T> right) {
         this.right = right;
-    }
-
-    @Override
-    public int compareTo(T o) {
-        return 0;
     }
 }
